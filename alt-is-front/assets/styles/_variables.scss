@@ -1,0 +1,57 @@
+/** Брейкпоинты */
+$large-desktop-width: 1440px;
+$desktop-width: 1240px;
+$tablet-width: 768px;
+$mobile-width: 540px;
+
+/** Цвета */
+$primary-100: #5C2300;  $secondary-100: #00255C;  $gray-100: #000000;   $success-20: #0BAE4F;
+$primary-90: #853200;   $secondary-90: #003585;   $gray-90: #262423;    $success-10: #E5FFF0;
+$primary-80: #AD4100;   $secondary-80: #0045AD;   $gray-80: #3B3735;    $error-20: #BF0510;
+$primary-70: #D65100;   $secondary-70: #0056D6;   $gray-70: #4F4B49;    $error-10: #FFE5E7;
+$primary-60: #FF6000;   $secondary-60: #0066FF;   $gray-60: #787472;    $warning-20: #FFAA00;
+$primary-50: #FF7C2E;   $secondary-50: #2E81FF;   $gray-50: #A19F9F;    $warning-10: #FFF6E5;
+$primary-40: #FF995C;   $secondary-40: #5C9DFF;   $gray-40: #C9C9C9;
+$primary-30: #FFB68A;   $secondary-30: #8AB8FF;   $gray-30: #DEDEDE;
+$primary-20: #FFD2B7;   $secondary-20: #B7D4FF;   $gray-20: #F2F2F2;
+$primary-10: #FFEFE5;   $secondary-10: #E5EFFF;   $gray-10: #FFFFFF;
+
+/** Тени */
+$shadow-small: 0px 2px 8px 0px rgba(38, 36, 35, 0.08);
+$shadow-medium: 0px 4px 16px 0px rgba(38, 36, 35, 0.08);
+$shadow-large: 0px 8px 24px 0px rgba(38, 36, 35, 0.08);
+
+/** Углы */
+$radius-4: 4px;
+$radius-8: 8px;
+$radius-16: 16px;
+$radius-24: 24px;
+$radius-40: 40px;
+
+/** Вертикальные отступы */
+$v-2: 2px;
+$v-4: 4px;
+$v-8: 8px;
+$v-16: 16px;
+$v-24: 24px;
+$v-32: 32px;
+$v-40: 40px;
+$v-48: 48px;
+$v-56: 56px;
+$v-64: 64px;
+$v-72: 72px;
+$v-80: 80px;
+$v-120: 120px;
+$v-160: 160px;
+$v-240: 240px;
+
+/** Боковые отступы */
+$h-8: 8px;
+$h-12: 12px;
+$h-24: 24px;
+$padding-desktop: 40px;
+$padding-tablet: 32px;
+$padding-mobile: 24px;
+
+/** Прочее */
+$columns: 12;

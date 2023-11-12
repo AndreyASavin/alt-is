@@ -1,0 +1,73 @@
+@use 'sass:math';
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.section {
+  overflow-x: hidden
+};
+.container {
+  max-width: $large-desktop-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: math.div(100%, $columns) * $i;
+    flex: 0 0 math.div(100%, $columns) * $i;
+    box-sizing: border-box;
+  }
+}
+@for $j from 1 through $columns {
+  .col-span-#{$j} {
+    margin-left: math.div(100%, $columns) * $j;
+  }
+}
+@media screen and (min-width: $desktop-width) {
+  .container {
+    padding: 0 $padding-desktop;
+  }
+  .row {
+    margin: 0 (-$h-12);
+  }
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      padding: 0 $h-12;
+    }
+  }
+}
+@media (min-width: $tablet-width) and (max-width: ($desktop-width - 0.1)) {
+  .container {
+    padding: 0 $padding-tablet;
+  }
+  .row {
+    margin: 0 (-$h-12);
+  }
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      padding: 0 $h-12;
+    }
+  }
+}
+@media screen and (max-width: ($mobile-width - 0.1)) {
+  .container {
+    padding: 0 $padding-mobile;
+  }
+  .row {
+    margin: 0 (-$h-8);
+  }
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      padding: 0 $h-8;
+    }
+  }
+}
